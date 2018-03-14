@@ -99,8 +99,8 @@ class FactoryGenerator extends Generator {
 			case 'float': return '$faker->randomFloat()';
 			case 'double': return '$faker->randomFloat()';
 			case 'tinyint': return '$faker->numberBetween(0, 1)';
-			case 'datetime': return '$faker->datetime';
-			case 'date': return '$faker->date';
+			case 'datetime': return '$faker->datetime()';
+			case 'date': return '$faker->date()';
 			default: return null;
 		}
 	}
