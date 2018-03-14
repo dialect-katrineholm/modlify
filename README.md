@@ -25,7 +25,7 @@ Modlify can currently generate:
     
 ``php artisan modlify:tests`` - Generates tests
     
-``php artisan modlify:views`` - GEnerates views
+``php artisan modlify:views`` - Generates views
     
 ``php artisan modlify:all`` Generates all of the components.
     
