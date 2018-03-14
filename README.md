@@ -58,6 +58,7 @@ Some generators has extra varables:
 #### Controller
 
 ``validations`` - Validation rules
+
 ``hasPassword`` - Model has password
 
 #### Factory
