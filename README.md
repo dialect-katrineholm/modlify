@@ -55,20 +55,20 @@ All the views has access to the following variables:
 
 Some generators has extra varables:
 
-Controller
+#### Controller
 
 ``validations`` - Validation rules
 ``hasPassword`` - Model has password
 
-Factory
+#### Factory
 
 ``fakers`` - List of calls to the faker instance.
 
-Policy
+#### Policy
 
 ``argumentName``- name of model varaible to avoid collition with $user.
 
-Test
+#### Test
 
 ``checkColumn``- name of column to use to check if model is seen in view.
 ``hasPassword`` - Model has password
