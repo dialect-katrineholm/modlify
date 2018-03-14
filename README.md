@@ -52,3 +52,23 @@ All the views has access to the following variables:
 ``resourceName`` - Name of resource, e.g users or article-types
 
 ``columns`` - Array of columns avaiable in table
+
+Some generators has extra varables:
+
+Controller
+
+``validations`` - Validation rules
+``hasPassword`` - Model has password
+
+Factory
+
+``fakers`` - List of calls to the faker instance.
+
+Policy
+
+``argumentName``- name of model varaible to avoid collition with $user.
+
+Test
+
+``checkColumn``- name of column to use to check if model is seen in view.
+``hasPassword`` - Model has password
