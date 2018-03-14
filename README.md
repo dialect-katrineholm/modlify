@@ -38,10 +38,17 @@ By default Modlify doesn't overwrite existing files, it is possible to force ove
 All the views has access to the following variables:
 
 ``model`` - Empty instance of the model
+
 ``modelName`` - Name of Model, e.g User or ArticleType
+
 ``databaseName`` - Name of database, e.g Forge
+
 ``tableName`` - Name of table, e.g users or article_types
+
 ``variableName`` - Name of variable e.g $user or $aricleTypes
+
 ``collectionName`` - Name of variable of collection of models e.g $users or $articleTypes
+
 ``resourceName`` - Name of resource, e.g users or article-types
+
 ``columns`` - Array of columns avaiable in table
