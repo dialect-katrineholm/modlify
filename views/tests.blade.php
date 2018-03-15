@@ -30,9 +30,9 @@ class {{$modelName}}Test extends TestCase
             'password' => 'password',
             'password_confirmation' => 'password'
         ];
-        $this->post("/{{$resourceName}}", $password + $data);
+        $this->post("/{{$resourceName}}", $password + $data)->assertRedirect();;
 @else
-        $this->post("/{{$resourceName}}", $data);
+        $this->post("/{{$resourceName}}", $data)->assertRedirect();;
 @endif
 		$this->assertDatabaseHas("{{$tableName}}", $data);
 	}
@@ -50,7 +50,7 @@ class {{$modelName}}Test extends TestCase
 @if($hasPassword)
         unset({{$variableName}}New['password']);
 @endif
-        $this->put("/{{$resourceName}}/".{{$variableName}}Old->id, {{$variableName}}New);
+        $this->put("/{{$resourceName}}/".{{$variableName}}Old->id, {{$variableName}}New)->assertRedirect();
 
         $this->assertDatabaseHas("{{$tableName}}", {{$variableName}}New);
         $this->assertDatabaseMissing("{{$tableName}}", {{$variableName}}Old->toArray());
@@ -59,7 +59,7 @@ class {{$modelName}}Test extends TestCase
     /** {{'@'.'test'}} */
 	public function it_can_destroy_{{$tableName}}(){
 		{{$variableName}} = factory({{$modelName}}::class)->create();
-		$this->delete("/{{$resourceName}}/{{$variableName}}->id");
+		$this->delete("/{{$resourceName}}/{{$variableName}}->id")->assertRedirect();
 		$this->assertDatabaseMissing("{{$tableName}}", {{$variableName}}->toArray());
 	}
 
