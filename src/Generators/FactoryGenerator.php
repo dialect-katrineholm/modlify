@@ -52,7 +52,7 @@ class FactoryGenerator extends Generator {
 				continue;
 			}
 
-			$result->put($column->name, '$faker->paragraph(3)');
+			$result->put($column->name, '$faker->sentence(3)');
 
 		}
 		return $result;
@@ -83,7 +83,7 @@ class FactoryGenerator extends Generator {
 		elseif(strpos($columnName, 'country') !== false){
 			return '$faker->country';
 		}
-		elseif(strpos($columnName, 'phone') !== false || strpos($columnName, 'mobile') !== false){
+		elseif(strpos($columnName, 'phone') !== false || strpos($columnName, 'mobile') !== false || strpos($columnName, 'cell') !== false){
 			return '$faker->phoneNumber';
 		}
 		elseif(strpos($columnName, 'name') !== false){
