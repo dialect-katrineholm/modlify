@@ -1,4 +1,4 @@
-namespace Tests\Feature;;
+namespace Tests\Feature;
 
 use Tests\TestCase;
 use \App\{{$modelName}};
@@ -30,9 +30,9 @@ class {{$modelName}}Test extends TestCase
             'password' => 'password',
             'password_confirmation' => 'password'
         ];
-        $this->post("/{{$resourceName}}", $password + $data)->assertRedirect();;
+        $this->post("/{{$resourceName}}", $password + $data)->assertRedirect();
 @else
-        $this->post("/{{$resourceName}}", $data)->assertRedirect();;
+        $this->post("/{{$resourceName}}", $data)->assertRedirect();
 @endif
 		$this->assertDatabaseHas("{{$tableName}}", $data);
 	}
