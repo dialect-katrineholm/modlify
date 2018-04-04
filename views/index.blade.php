@@ -3,7 +3,7 @@
 <p>
     <a href="{!! '{'.'{'."route('$resourceName.create')".'}'.'}' !!}" class="btn btn-primary "><i class="fa fa-plus"></i> New </a>
 </p>
-<div class="card card-default">
+<div class="card">
     <div class="card-header"> {{$tableName}}</div>
     <div class="card-body">
         {!! '@'."if($collectionName"."->count())" !!}

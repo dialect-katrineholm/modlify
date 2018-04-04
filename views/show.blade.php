@@ -8,7 +8,7 @@
         <button class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete</button>
     </form>
 </p>
-<div class="card card-default">
+<div class="card">
     <div class="card-header"> {{$tableName}} {!! '{'.'{'.$variableName.'->id}'.'}' !!}</div>
     <div class="card-body">
         <table class="table table-striped">
