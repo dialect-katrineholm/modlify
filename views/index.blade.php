@@ -1,7 +1,7 @@
 {!! '@'.'extends("layouts.app")' !!}
 {!! '@'.'section("content")' !!}
 <p>
-    <a href="{!! '{'.'{'."route('$resourceName.create')".'}'.'}' !!}" class="btn btn-primary "><i class="fa fa-plus"></i> New </a>
+    <a href="{!! '{'.'{'."route('$resourceName.create')".'}'.'}' !!}" class="btn btn-primary ">New</a>
 </p>
 <div class="card">
     <div class="card-header"> {{$tableName}}</div>
@@ -22,7 +22,7 @@
 @foreach($columns as $column)
                             <td>{{ '{'.'{' }}{{$variableName}}->{{$column->name}}{{ '}'.'}' }}</td>
 @endforeach
-                            <td><a href="{!! '{'.'{'."route('$resourceName.show', $variableName"."->id)".'}'.'}' !!}" class="btn btn-primary "><i class="fa fa-plus"></i> Show </a></td>
+                            <td><a href="{!! '{'.'{'."route('$resourceName.show', $variableName"."->id)".'}'.'}' !!}" class="btn btn-primary ">Show</a></td>
                         </tr>
                     {!! '@'."endforeach" !!}
                 </tbody>
