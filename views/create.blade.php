@@ -1,6 +1,6 @@
 {!! '@'.'extends("layouts.app")' !!}
 {!! '@'.'section("content")' !!}
-<div class="card card-default">
+<div class="card">
     <div class="card-header"> Create {{$modelName}}</div>
     <div class="card-body">
         <form action="{!! '{'.'{'."route('$resourceName.store')".'}'.'}' !!}" method="post">

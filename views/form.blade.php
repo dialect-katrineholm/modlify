@@ -1,4 +1,4 @@
-{!! '<?'.'php if(!isset($model)) $model = null; ?>' !!}
+{!! "<".'?php if(!isset($model)) $model = null; ?>' !!}
 @foreach($inputs as $name => $type)
 <div class="form-group">
 @if($name == "password")

@@ -1,6 +1,6 @@
 {!! '@'.'extends("layouts.app")' !!}
 {!! '@'.'section("content")' !!}
-<div class="card card-default">
+<div class="card">
     <div class="card-header"> Edit {{ $modelName }}</div>
     <div class="card-body">
         <form action="{!! '{'.'{'."route('$resourceName.update', $variableName"."->id)".'}'.'}' !!}" method="post">
