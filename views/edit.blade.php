@@ -8,7 +8,7 @@
             {!! '{'.'{'."csrf_field()".'}'.'}' !!}
             {!! '@'.'include("'.$tableName.'.form", ["model" => '.$variableName.'])' !!}
             <button class="btn btn-success">Save</button>
-            <a href="{!! '{'.'{'."route('$resourceName.edit', $variableName"."->id)".'}'.'}' !!}" class="btn btn-danger">Cancel</a>
+            <a href="{!! '{'.'{'."route('$resourceName.show', $variableName"."->id)".'}'.'}' !!}" class="btn btn-danger">Cancel</a>
         </form>
     </div>
 </div>
