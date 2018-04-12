@@ -1,12 +1,12 @@
 {
-    "name": "Dialect/Modlify",
+    "name": "dialect-katrineholm/modlify",
     "type": "library",
     "description": "Generate from model",
     "keywords": [
         "Dialect",
         "Modlify"
     ],
-    "homepage": "https://github.com/Dialect/Modlify",
+    "homepage": "https://github.com/dialect-katrineholm/modlify",
     "license": "MIT",
     "authors": [
         {
