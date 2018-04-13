@@ -9,7 +9,7 @@ Install via composer
 
 It is possible publish the views modlify uses to generate the stubs if custom modification is wanted.
 
-    php artisan vendor:publish --provider="Dialect\TransEdit\TransEditServiceProvider"
+    php artisan vendor:publish --provider="Dialect\Modlify\ModlifyServiceProvider"
 
 ## Usage
 
